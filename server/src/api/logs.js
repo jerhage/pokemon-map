@@ -30,15 +30,16 @@ router.post('/', async (req, res, next) => {
   }
 });
 
-// DELETE by id
-router.delete('/:id', (req, res, next) => {
-  LogEntry.findOneAndDelete({ _id: req.params.id }, (error) => {
-    if (error) {
-      next(error);
-    } else {
-      res.send('success');
-    }
-  });
-});
+// DELETE by id **setup later
+
+// router.delete('/:id', (req, res, next) => {
+//   LogEntry.findOneAndDelete({ _id: req.params.id }, (error) => {
+//     if (error) {
+//       next(error);
+//     } else {
+//       res.send('success');
+//     }
+//   });
+// });
 
 module.exports = router;

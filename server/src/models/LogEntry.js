@@ -4,12 +4,14 @@ const { Schema } = mongoose;
 
 const requiredNumber = {
   type: Number,
+  required: true,
 };
 
 const logEntrySchema = new Schema(
   {
     title: {
       type: String,
+      required: true,
     },
     description: String,
     comments: String,
@@ -31,10 +33,10 @@ const logEntrySchema = new Schema(
       max: 90,
     },
     visitDate: {
-      type: String,
+      type: Date,
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const LogEntry = mongoose.model('LogEntry', logEntrySchema);
