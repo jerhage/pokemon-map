@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   height: 100vh;
   width: 100vw;
-  overflow: "hidden";
+  overflow: 'hidden';
 }
 
 /* Put bottom center of svg on the exact coordinate */
@@ -14,5 +14,18 @@ body {
 }
 
 .popup {
-  max-width: 300px;
+  width: 30vw;
+  padding: 0.5rem;
+}
+.log-entry-form input,
+.log-entry-form label,
+.log-entry-form textarea,
+.log-entry-form button {
+  display: block;
+  margin: 0.25rem 0;
+  width: 100%;
+}
+
+.error-message {
+  color: red;
 }
